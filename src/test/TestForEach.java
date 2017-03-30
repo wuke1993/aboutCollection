@@ -13,10 +13,14 @@ public class TestForEach {
 
 	public static void main(String[] args) {
 		List<String> arrList = new ArrayList<String>();
+		
+		arrList.add("aa");
+		arrList.add("bb");
+		
 		for(String str : arrList) {
 			System.out.println(str);
 		}
-
+		
+		System.out.println(arrList);
 	}
-
 }

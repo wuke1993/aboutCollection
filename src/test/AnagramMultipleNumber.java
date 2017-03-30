@@ -10,12 +10,12 @@ import java.util.Scanner;
  * @author: wuke 
  * @date  : 2016年10月29日 下午7:15:13
  * Title  : AnagramMultipleNumber
- * Description : 
+ * Description : “异位构词”，一个数和它的倍数之间互为“同分异构”
  */
 public class AnagramMultipleNumber {
 	public static void main(String[] args) {
-		Scanner sc = new Scanner(System.in);
-		int N = sc.nextInt();
+		Scanner in = new Scanner(System.in);
+		int N = in.nextInt();
 		
 		int sum = 0;
 		sum = sumOfAnagram(N);
