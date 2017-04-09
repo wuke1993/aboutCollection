@@ -23,7 +23,7 @@ public class ComparatorTest {
 		for(Student stu : students)
 		    System.out.println(stu);
 		
-		// Arrays.sort(students, new StudentSortWithName()); // ???
+		Arrays.sort(students, new StudentSortWithName()); // ???´æÔÚÎÊÌâ£¬´ıĞŞ 20170409
 		// Arrays.sort(students);
 		
 		for(Student stu : students)
