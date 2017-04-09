@@ -1,4 +1,4 @@
-package test;
+package aboutHashMap;
 /**
  * @author: wuke 
  * @date  : 2016年7月27日 下午5:12:06

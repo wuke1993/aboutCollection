@@ -1,4 +1,4 @@
-package test;
+package aboutHashMap;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -9,7 +9,7 @@ import java.util.Map;
  * Title  : testHashMap
  * Description : 
  */
-public class testHashMap {
+public class TestHashMap {
 	public static void main(String[] args) {
 		HashMap<String, String> hs = new HashMap<String, String>();
 		
