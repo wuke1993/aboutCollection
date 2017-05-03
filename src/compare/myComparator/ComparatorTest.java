@@ -15,26 +15,25 @@ import compare.myComparable.Student;
  */
 public class ComparatorTest {
 	public static void main(String[] args) {
-        Student[] students = new Student[4];
-        List<Student> stus = new ArrayList<Student>();
-		
+        Student[] students = new Student[3];
 		students[0] = new Student(11, "a");
 		students[1] = new Student(12, "e");
-		students[2] = new Student(13, "c");
-		students[3] = new Student(14, "b");
+		students[2] = new Student(10, "c");
 		
+		Arrays.sort(students, new StudentSortWithAge());
+		// Arrays.sort(students); // Student 没有实现 Comparable 接口，为什么可以比较？
+		for(Student stu : students)
+		    System.out.println(stu);
+		
+		System.out.println("*********");
+		
+		List<Student> stus = new ArrayList<Student>();
 		stus.add(new Student(11, "a"));
 		stus.add(new Student(12, "e"));
 		stus.add(new Student(10, "c"));
 		
-		for(Student stu : students)
-		    System.out.println(stu);
-		
-		Arrays.sort(students, new StudentSortWithAge());
-		// Arrays.sort(students);
 		Collections.sort(stus, new StudentSortWithName());
-		
-		for(Student stu : students)
+		for(Student stu : stus)
 		    System.out.println(stu);
 	}
 }
